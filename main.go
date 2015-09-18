@@ -70,7 +70,7 @@ func main() {
 		os.Exit(-1)
 	}
 
-	scheduler := NewExampleScheduler(exec, numTasks, CPUS_PER_TASK, MEM_PER_TASK)
+	scheduler := NewScheduler(exec, numTasks, CPUS_PER_TASK, MEM_PER_TASK)
 	if err != nil {
 		log.Fatalf("Failed to create scheduler with error: %v\n", err)
 		os.Exit(-2)
